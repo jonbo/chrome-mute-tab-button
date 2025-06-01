@@ -1,16 +1,16 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
 
   "name": "Mute Tab Button 🔊",
   "description": "Adds an action button that can mute and unmute the tab",
-  "version": "1.0",
+  "version": "2.0",
 
   "permissions": ["tabs"],
-  "browser_action": {
+  "action": {
     "default_title": "Mute Tab",
     "default_icon": "unmuted.png"
   },
   "background": {
-    "scripts": ["background.js"]
+    "service_worker": "background.js"
   }
 }
